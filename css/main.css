@@ -1,0 +1,140 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.42em;
+    background-color: #001821;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    /*
+    inherit ключевое слово, которое сообщает, 
+    что необходимо наследовать значение свойства у родительского элемента
+    */
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+button {
+    border-width: 0;
+}
+.container {
+    margin: 0 auto;
+    width: 1141px;
+}
+
+.header {
+    height: 120px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 42px;
+    left: 165px;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #DA0100;
+}
+
+.contacts {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    text-align: right;
+}
+
+.contacts__tel {
+    font-style: normal;
+    font-size: 26px;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+.content {
+    width: 520px;
+}
+
+.heading__h1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.42em;
+    margin-bottom: 25px;
+}
+
+.heading__text {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.content .button {
+    background: #F5170E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    width: 168px;
+    padding: 18px 40px;
+    margin-bottom: 240px;
+}
+
+.button__link {
+    font-size: 14px;
+    font-weight: 700;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.content .button:hover {
+    background-color: #DA0100;
+    box-shadow: none;
+}
+
+
+.footer {
+    position: relative;
+}
