@@ -66,12 +66,20 @@ button {
     margin-right: 50px;
 }
 
+.menu__item:last-child {
+    margin-right: 0;
+}
+
 .menu__link {
     font-size: 14px;
     text-decoration: none;
 }
 
 .menu__link:hover {
+    color: #DA0100;
+}
+
+.menu__item--active .menu__link {
     color: #DA0100;
 }
 
@@ -118,7 +126,7 @@ button {
     border-radius: 35px;
     width: 168px;
     padding: 18px 40px;
-    margin-bottom: 240px;
+    margin-bottom: 263px;
 }
 
 .button__link {
@@ -133,6 +141,38 @@ button {
     background-color: #DA0100;
     box-shadow: none;
 }
+
+.elements__item {
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-right: 23px;
+    width: 362px;
+    vertical-align: top;
+}
+
+.elements__item:last-child {
+    margin-right: 0;
+}
+
+.flame-tour__text {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 63px;
+}
+
+.elements__item-img {
+    display: block;
+    margin-bottom: 37px;
+}
+
+.elements__name {
+    color: #000000;
+
+}
+
+
 
 
 .footer {
