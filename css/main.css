@@ -147,7 +147,9 @@ button {
     display: inline-block;
     margin-right: 23px;
     width: 362px;
+    /* height: 449px; */
     vertical-align: top;
+    color: #000000;
 }
 
 .elements__item:last-child {
@@ -162,19 +164,28 @@ button {
     margin-bottom: 63px;
 }
 
-.elements__item-img {
+.elements__img {
     display: block;
     margin-bottom: 37px;
 }
 
 .elements__name {
-    color: #000000;
-
+    font-size: 24px;
+    font-weight: 700;
 }
 
+.elements__icons-item {
+    display: inline-block;
+}
 
+.elements__img {
+    display: inline-block;
+    margin-bottom: 0;
+}
 
-
+.elements__text {
+    vertical-align: top;
+}
 .footer {
     position: relative;
 }
