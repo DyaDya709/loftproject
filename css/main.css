@@ -151,6 +151,7 @@ button {
     /* height: 449px; */
     vertical-align: top;
     color: #000000;
+    border-radius: 5px;
 }
 
 .elements__item:last-child {
