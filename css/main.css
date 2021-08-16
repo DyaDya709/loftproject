@@ -36,6 +36,7 @@ h4 {
 button {
     border-width: 0;
 }
+
 .container {
     margin: 0 auto;
     width: 1141px;
@@ -132,7 +133,7 @@ button {
 .button__link {
     font-size: 14px;
     font-weight: 700;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -174,18 +175,66 @@ button {
     font-weight: 700;
 }
 
+.elements__icons {
+    height: 33px;
+}
+
 .elements__icons-item {
     display: inline-block;
 }
 
-.elements__img {
-    display: inline-block;
-    margin-bottom: 0;
+li .elements__name {
+    margin-bottom: 28px;
+    margin-left: 23px;
+
 }
 
-.elements__text {
-    vertical-align: top;
+.elements__icons-item .elements__img {
+    display: inline-block;
+    margin-left: 28px;
 }
+
+li .elements__img {
+    /* display: inline-block; */
+    margin-bottom: 40px;
+}
+
+li .elements__text {
+    /* display: inline-block; */
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.elements__description {
+    font-weight: normal;
+    font-size: 14px;
+    color: #303030;
+    margin-left: 22px;
+    margin-bottom: 22px;
+}
+
+.elements .button {
+    width: 135px;
+    height: 55px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 35px;
+    border: 1px solid;
+    color: #F5170E;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    margin-left: 24px;
+    margin-bottom: 26px;
+}
+
+.elements .button:hover {
+    background: #F5170E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: none;
+}
+
 .footer {
     position: relative;
 }
