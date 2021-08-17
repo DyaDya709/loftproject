@@ -37,6 +37,11 @@ button {
     border-width: 0;
 }
 
+.wrapper {
+    background: url(/Project1/img/фон1.jpg) top no-repeat,
+    url(/Project1/img/Фон2.png) bottom no-repeat;
+}
+
 .container {
     margin: 0 auto;
     width: 1141px;
@@ -152,6 +157,7 @@ button {
     vertical-align: top;
     color: #000000;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .elements__item:last-child {
