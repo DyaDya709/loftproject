@@ -39,7 +39,7 @@ button {
 
 .wrapper {
     background: url(/Project1/img/фон1.jpg) top no-repeat,
-    url(/Project1/img/Фон2.png) bottom no-repeat;
+        url(/Project1/img/Фон2.png) bottom no-repeat;
 }
 
 .container {
@@ -148,6 +148,10 @@ button {
     box-shadow: none;
 }
 
+.elements {
+    margin-bottom: 138px;
+}
+
 .elements__item {
     background-color: #FFFFFF;
     display: inline-block;
@@ -241,6 +245,23 @@ li .elements__text {
     color: #FFFFFF;
     border: none;
 }
+
+.news__heading {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 51px;
+}
+
+.news-description__item {
+    display: inline-block;
+    width: 557px;
+    overflow: hidden;
+    border-radius: 5px;
+    border:1px solid red;
+    vertical-align: top;
+}
+
+
 
 .footer {
     position: relative;
