@@ -38,8 +38,8 @@ button {
 }
 
 .wrapper {
-    background: url(/Project1/img/фон1.jpg) top no-repeat,
-        url(/Project1/img/Фон2.png) bottom no-repeat;
+    background: url(../img/фон.png) top no-repeat,
+        url(../img//Фон2.png) bottom no-repeat;
 }
 
 .container {
@@ -250,6 +250,10 @@ li .elements__text {
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 68px;
+}
+
+.news-description {
+    margin-bottom: 53px;
 }
 
 .news-description__item {
