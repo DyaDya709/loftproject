@@ -275,12 +275,13 @@ li .elements__text {
 
 .news-description-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 23px;
     left: 27px;
+    min-height: 94px;
 }
 
 li:last-child .news-description-text {
-    bottom: -7px;
+    bottom: 1px;
     left: 27px;
 }
 
