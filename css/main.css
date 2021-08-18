@@ -38,8 +38,8 @@ button {
 }
 
 .wrapper {
-    background: url(../img/фон.png) top no-repeat,
-        url(../img//Фон2.png) bottom no-repeat;
+    background: url(../img/фон1.jpg) top no-repeat,
+        url(../img/Фон2.png) bottom no-repeat;
 }
 
 .container {
