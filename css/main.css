@@ -304,6 +304,46 @@ li:last-child .news-description-text {
     font-size: 16px;
 }
 
+.paginator {
+    text-align: center;
+}
+
+.paginator__display {
+    display: inline-block;
+    /* box-sizing: border-box; */
+    vertical-align: middle;
+}
+
+.paginator__list {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.paginator__item {
+    margin-left: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.paginator__item--active {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #F5170E;
+    line-height: 32px;
+}
+
+.paginator__item:hover {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #F5170E;
+    line-height: 32px;
+}
+
 .footer {
     position: relative;
 }
