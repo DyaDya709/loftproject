@@ -249,7 +249,7 @@ li .elements__text {
 .news__heading {
     font-weight: bold;
     font-size: 36px;
-    margin-bottom: 51px;
+    margin-bottom: 68px;
 }
 
 .news-description__item {
@@ -257,11 +257,47 @@ li .elements__text {
     width: 557px;
     overflow: hidden;
     border-radius: 5px;
-    border:1px solid red;
     vertical-align: top;
+    position: relative;
+    margin-right: 17px;
 }
 
+.news-description__item:last-child {
+    margin-right: 0;
+}
 
+.news-description__item-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.news-description-text {
+    position: absolute;
+    bottom: 20px;
+    left: 27px;
+}
+
+li:last-child .news-description-text {
+    bottom: -7px;
+    left: 27px;
+}
+
+.news-description__item-date {
+    display: block;
+    font-size: 14px;
+}
+
+.news-description__item-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.news-description__item-desc {
+    font-size: 16px;
+}
 
 .footer {
     position: relative;
