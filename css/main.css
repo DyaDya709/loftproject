@@ -103,14 +103,13 @@ button {
     text-decoration: none;
 }
 
-.contacts__dropdown-title {
+.contacts-text {
     font-size: 13px;
     text-decoration: underline;
     font-style: normal;
 }
 
-.contacts__dropdown-title:hover>.schedule,
-.schedule__text {
+.contacts__dropdown-title:hover>.schedule {
     visibility: visible;
 }
 
@@ -123,7 +122,6 @@ button {
     text-align: center;
     box-sizing: border-box;
     padding-top: 20px;
-    text-decoration: none;
 }
 
 .shedule__text-item {
@@ -131,6 +129,8 @@ button {
     font-weight: bold;
     font-size: 13px;
     color: #1E1F20;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .shedule__text-item:last-child {
@@ -154,7 +154,7 @@ button {
     font-size: 18px;
 }
 
-.content .button {
+.content.button {
     background: #F5170E;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
@@ -334,11 +334,11 @@ li:last-child .news-description-text {
 
 .paginator {
     text-align: center;
+    margin-bottom: 145px;
 }
 
 .paginator__display {
     display: inline-block;
-    /* box-sizing: border-box; */
     vertical-align: middle;
 }
 
@@ -370,6 +370,63 @@ li:last-child .news-description-text {
     border-radius: 50%;
     color: #F5170E;
     line-height: 32px;
+}
+
+.section-about .container {
+    position: relative;
+}
+
+.about {
+    position: relative;
+}
+
+.about:before {
+    content: "";
+    background: url(../img/gates.png) top no-repeat;
+    height: 505px;
+    width: 490px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: top;
+}
+
+.about__img {
+    display: inline-block;
+    margin-left: -140px;
+    margin-top: 97px;
+    width: 785px;
+    min-height: 455px;
+    vertical-align: top;
+}
+
+.wrapper__about {
+    width: 502px;
+    position: absolute;
+    bottom: 175px;
+    left: 435px;
+}
+
+.about__title,
+.about__text {
+    display: block;
+    box-sizing: border-box;
+    color: #060606;
+}
+
+.about__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 57px;
+}
+
+.about__text {
+    line-height: 1.68em;
+}
+
+.about__btn {
+    position: absolute;
+    bottom: -195px;
+    left: 435px;
 }
 
 .footer {
