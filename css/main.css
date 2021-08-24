@@ -91,7 +91,7 @@ button {
 
 .contacts {
     position: absolute;
-    top: 26px;
+    top: 33px;
     right: 0;
     text-align: right;
 }
@@ -99,8 +99,8 @@ button {
 .contacts__tel {
     font-style: normal;
     font-size: 26px;
-    margin-bottom: 4px;
     text-decoration: none;
+    display: block;
 }
 
 .contacts-text {
@@ -378,6 +378,7 @@ li:last-child .news-description-text {
 
 .about {
     position: relative;
+    margin-bottom: 75px;
 }
 
 .about:before {
@@ -429,6 +430,32 @@ li:last-child .news-description-text {
     left: 435px;
 }
 
+
 .footer {
     position: relative;
+    border-top: 1px solid  rgb(255, 255, 255, .1);
+}
+
+.menu {
+    display: inline-block;
+    font-size: 14px;
+}
+.social {
+    display: inline-block;
+    margin-left: 700px;
+    margin-top: 33px;
+}
+.social__item {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.footer .contacts {
+    position: absolute;
+    top: 25px;
+} 
+
+.footer__text {
+    display: block;
+    font-size: 11px;
 }
