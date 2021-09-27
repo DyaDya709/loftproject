@@ -42,6 +42,9 @@ button {
         url(../img/Фон2.png) bottom no-repeat;
 }
 
+.hero {
+    margin-bottom: 263px;
+}
 .container {
     margin: 0 auto;
     width: 1141px;
@@ -56,19 +59,21 @@ button {
 .logo {
     display: inline-block;
     position: absolute;
-    top: 29px;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
 }
 
 .menu {
     position: absolute;
-    top: 42px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 165px;
 }
 
 .menu__item {
     display: inline-block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     margin-right: 50px;
 }
 
@@ -116,7 +121,7 @@ button {
 .schedule {
     background: url(../img/SheduleImg.png) top no-repeat;
     width: 160px;
-    margin-left: 1370px;
+    /* margin-left: 1370px; */
     height: 77px;
     visibility: hidden;
     text-align: center;
@@ -154,13 +159,15 @@ button {
     font-size: 18px;
 }
 
-.content.button {
-    background: #F5170E;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-    width: 168px;
+.button {
+    border-radius: 35px; 
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F5170E;
+    color: #FFFFFF;
     padding: 18px 40px;
-    margin-bottom: 263px;
 }
 
 .button__link {
@@ -174,10 +181,15 @@ button {
 .content .button:hover {
     background-color: #DA0100;
     box-shadow: none;
+    color:#FFFFFF;
 }
 
 .elements {
     margin-bottom: 138px;
+}
+
+.wrapper-element {
+    padding: 30px 22px;
 }
 
 .elements__item {
@@ -196,17 +208,31 @@ button {
     margin-right: 0;
 }
 
-.flame-tour__text {
-    display: inline-block;
-    margin-right: 12px;
+.section-title {
     font-size: 36px;
     font-weight: 700;
+    line-height: 1.25;
+}
+
+.flame-tour__text {
+    /* display: inline-block; */
+    /* margin-right: 12px; */
+    /* font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25; */
     margin-bottom: 63px;
+    display: flex;
+    align-items: center;
+}
+.flame-tour__text::after {
+    content:url(../img/flame.png);
+    margin-left: 10px;
+    display: block;
 }
 
 .elements__img {
     display: block;
-    margin-bottom: 37px;
+    /* margin-bottom: 37px; */
 }
 
 .elements__name {
@@ -215,28 +241,31 @@ button {
 }
 
 .elements__icons {
-    height: 33px;
+    /* height: 33px; */
+    margin-bottom: 20px;
+    margin-left: -20px;
 }
 
 .elements__icons-item {
     display: inline-block;
+    margin-left: 20px;
 }
 
 li .elements__name {
     margin-bottom: 28px;
-    margin-left: 23px;
+    /* margin-left: 23px; */ 
 
 }
 
 .elements__icons-item .elements__img {
     display: inline-block;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 
-li .elements__img {
-    /* display: inline-block; */
-    margin-bottom: 40px;
-}
+/* li .elements__img {
+    display: inline-block; */
+    /* margin-bottom: 40px;
+} */
 
 li .elements__text {
     /* display: inline-block; */
@@ -250,21 +279,13 @@ li .elements__text {
     color: #303030;
     margin-left: 22px;
     margin-bottom: 22px;
+    margin-top: 0;
 }
 
-.elements .button {
-    width: 135px;
-    height: 55px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 35px;
+.elements__button {
     border: 1px solid;
     color: #F5170E;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
     background: #FFFFFF;
-    margin-left: 24px;
-    margin-bottom: 26px;
 }
 
 .elements .button:hover {
@@ -275,8 +296,8 @@ li .elements__text {
 }
 
 .news__heading {
-    font-weight: bold;
-    font-size: 36px;
+    /* font-weight: bold;
+    font-size: 36px; */
     margin-bottom: 68px;
 }
 
@@ -379,6 +400,8 @@ li:last-child .news-description-text {
 .about {
     position: relative;
     margin-bottom: 75px;
+    text-align: right;
+    padding-top: 90px;
 }
 
 .about:before {
@@ -389,6 +412,9 @@ li:last-child .news-description-text {
     display: inline-block;
     background-size: cover;
     vertical-align: top;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .about__img {
@@ -401,10 +427,16 @@ li:last-child .news-description-text {
 }
 
 .wrapper__about {
-    width: 502px;
-    position: absolute;
-    bottom: 175px;
-    left: 435px;
+    width: 750px;
+    padding: 60px 200px 60px 80px;
+    box-sizing: border-box;
+    /* bottom: 175px;
+    left: 435px; */
+    background: url(../img/mountains.png) top / cover no-repeat;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    text-align: left;
 }
 
 .about__title,
@@ -412,11 +444,10 @@ li:last-child .news-description-text {
     display: block;
     box-sizing: border-box;
     color: #060606;
+    margin-bottom: 100px;
 }
 
 .about__title {
-    font-weight: bold;
-    font-size: 36px;
     margin-bottom: 57px;
 }
 
@@ -425,15 +456,18 @@ li:last-child .news-description-text {
 }
 
 .about__btn {
-    position: absolute;
-    bottom: -195px;
-    left: 435px;
+    /* position: absolute; */
+    /* bottom: 35px; */
+    left: 450px;
+    background-color: #F5170E;
+    color: #FFFFFF;
 }
 
 
 .footer {
     position: relative;
     border-top: 1px solid  rgb(255, 255, 255, .1);
+    padding-top: 100px;
 }
 
 .menu {
@@ -442,17 +476,22 @@ li:last-child .news-description-text {
 }
 .social {
     display: inline-block;
-    margin-left: 700px;
-    margin-top: 33px;
+    /* margin-top: 50px; */
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .social__item {
     display: inline-block;
     margin-right: 7px;
 }
 
-.footer .contacts {
+.footer-contacts {
     position: absolute;
-    top: 25px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 } 
 
 .footer__text {
