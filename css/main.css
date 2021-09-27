@@ -40,6 +40,8 @@ button {
 .wrapper {
     background: url(../img/фон1.jpg) top no-repeat,
         url(../img/Фон2.png) bottom no-repeat;
+    overflow: hidden;
+    min-width: 1200px;    
 }
 
 .hero {
@@ -48,6 +50,7 @@ button {
 .container {
     margin: 0 auto;
     width: 1141px;
+    
 }
 
 .header {
@@ -288,11 +291,11 @@ li .elements__text {
     background: #FFFFFF;
 }
 
-.elements .button:hover {
+.elements__button:hover {
     background: #F5170E;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
-    border: none;
+    border: 1px solid #F5170E;
 }
 
 .news__heading {
@@ -411,20 +414,20 @@ li:last-child .news-description-text {
     width: 490px;
     display: inline-block;
     background-size: cover;
-    vertical-align: top;
+    /* vertical-align: top; */
     left: 0;
     top: 0;
     position: absolute;
 }
 
-.about__img {
+/* .about__img {
     display: inline-block;
     margin-left: -140px;
     margin-top: 97px;
     width: 785px;
     min-height: 455px;
     vertical-align: top;
-}
+} */
 
 .wrapper__about {
     width: 750px;
@@ -437,6 +440,7 @@ li:last-child .news-description-text {
     z-index: 1;
     position: relative;
     text-align: left;
+    border-radius: 5px;
 }
 
 .about__title,
